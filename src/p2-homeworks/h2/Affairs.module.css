@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin: 1rem 0 0 0 ;
+
+
+}
+
+.name{
+    width: 33%;
+
+}
+.priority{
+    text-align: left;
+    width: 33%;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #f4511e;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 #666;
+    transform: translateY(4px);
+}
