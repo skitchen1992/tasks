@@ -3,10 +3,11 @@
     background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/c08d8e88899493.5eb55618dcf81.jpg);
     padding: 1rem;
     height: 30vh ;
+    position: relative;
 }
 .buttons{
-    position: fixed;
-    top: 16rem
+    position: absolute;
+    top: 15rem
 }
 .button{
     display:inline-block;
