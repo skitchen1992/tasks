@@ -23,13 +23,13 @@ function Affairs(props: AffairsPropsType) {
         props.setFilter('all')
     }
     const setHigh = () => {
-        props.setFilter('low')
+        props.setFilter('high')
     }
     const setMiddle = () => {
         props.setFilter('middle')
     }
     const setLow = () => {
-        props.setFilter('high')
+        props.setFilter('low')
     }
 
     return (
