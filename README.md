@@ -1,3 +1,5 @@
+В этом проекте выподняю различные таски на  React+Hooks+TypeScript
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
