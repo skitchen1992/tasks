@@ -1,4 +1,4 @@
-import React, {ChangeEvent, SetStateAction, useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -12,7 +12,7 @@ type GreetingContainerPropsType = {
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
     const [name, setName] = useState<string>('')
     const [nameDirty, setNameDirty] = useState<boolean>(false)
-    const [error, setError] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string>('Имя не может быть пустым') // need to fix any
     const [formValid, setFormValid] = useState<boolean>(false)
 
     useEffect(() => {
@@ -23,9 +23,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const blurHandler = (e: any ) => {
         setNameDirty(true)
-        if (e.currentTarget.value === '') {
-            setError('Имя не может быть пустым')
-        }
+        // if (e.currentTarget.value === '') {
+        //     setError('Имя не может быть пустым')
+        // }
     }
     const addUser = () => {
         addUserCallback(name)

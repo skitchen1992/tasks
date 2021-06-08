@@ -40,7 +40,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <input onBlur={e => blurHandler(e)} value={name} onChange={setNameCallback} className={inputClass}/>
             <button className={s.button} disabled={formValid} onClick={addUser}>add</button>
             <span>{totalUsers}</span>
-            {error && <div className={s.prompt} style={{color: 'red'}}>{error}</div>}
+            {(error && nameDirty) && <div className={s.prompt} style={{color: 'red'}}>{error}</div>}
 
         </div>
     )
