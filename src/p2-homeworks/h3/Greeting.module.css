@@ -1,7 +1,47 @@
 .someClass {
 
 }
+.wrapper{
+    margin: 2rem 2rem;
+    position: relative;
+}
 
 .error {
-    border: 1px solid red;
+    border: 2px solid red;
+    color: #f4511e;
+    outline: none;
+
 }
+
+
+.success{
+    border: 2px solid limegreen;
+    color: green;
+    outline: none;
+
+}
+
+.input{
+    border: 2px solid grey;
+
+    outline: none;
+
+}
+.button{
+    margin: 0 .5rem 0 .5rem;
+    background-color: #4B81E8;
+    color: white;
+}
+.button:focus{
+    outline: #7194d9 solid 1px;
+
+}
+
+.prompt{
+    position: absolute;
+    top: 1.5rem
+}
+
+
+
+

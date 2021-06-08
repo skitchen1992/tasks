@@ -1,36 +1,52 @@
-import React, {useState} from 'react'
+import React, {ChangeEvent, SetStateAction, useEffect, useState} from 'react'
 import Greeting from './Greeting'
+import {UserType} from "./HW3";
+
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
+    users: Array<UserType>
+    addUserCallback: (name: string) => void
 }
 
-// более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
 
-// более современный и удобный для про :)
-// уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [name, setName] = useState<string>('')
+    const [nameDirty, setNameDirty] = useState<boolean>(false)
+    const [error, setError] = useState<string>('') // need to fix any
+    const [formValid, setFormValid] = useState<boolean>(false)
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName('') // need to fix
+    useEffect(() => {
+        error
+            ? setFormValid(true)
+            : setFormValid(false)
+    }, [error])
+
+    const blurHandler = (e: any ) => {
+        setNameDirty(true)
+        if (e.currentTarget.value === '') {
+            setError('Имя не может быть пустым')
+        }
     }
     const addUser = () => {
-        alert(`Hello  !`) // need to fix
+        addUserCallback(name)
+        alert(name)
+        setName('')
+        setFormValid(false)
     }
 
-    const totalUsers = 0 // need to fix
+    const totalUsers = users.length
 
     return (
         <Greeting
             name={name}
-            setNameCallback={setNameCallback}
+            nameDirty={nameDirty}
+            setName={setName}
+            setError={setError}
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            blurHandler={blurHandler}
+            formValid={formValid}
         />
     )
 }
