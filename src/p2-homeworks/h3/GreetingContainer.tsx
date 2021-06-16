@@ -31,7 +31,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         addUserCallback(name)
         alert(name)
         setName('')
-        setFormValid(false)
+        setFormValid(true)
+
     }
 
     const totalUsers = users.length
