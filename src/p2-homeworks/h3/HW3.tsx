@@ -19,6 +19,8 @@ console.log(users)
 
     return (
         <div>
+
+            <hr/>
             <hr/>
 
             {/*should work (должно работать)*/}

@@ -33,6 +33,8 @@
     border: none;
     border-radius: 50%;
     box-shadow: 0 3px #999;
+    width: 20px;
+    height: 20px;
 }
 .button:hover {
     background-color: #3e8e41

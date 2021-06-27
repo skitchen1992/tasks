@@ -20,6 +20,8 @@ function HW1() {
     return (
         <div>
             <hr/>
+            <hr/>
+            <hr/>
 
             {/*should work (должно работать)*/}
 
