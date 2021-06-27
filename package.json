@@ -1,6 +1,6 @@
 {
   "name": "homeworks",
-  "tasks": "https://skitchen1992.github.io/tasks",
+  "homepage": "https://skitchen1992.github.io/tasks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

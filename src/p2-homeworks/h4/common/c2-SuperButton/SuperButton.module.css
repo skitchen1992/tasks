@@ -7,13 +7,13 @@
     background: #4B81E8;
     color: white;
 }
-.default:hover{
-    opacity: 70%;
-}
+/*.default:hover{*/
 
-.default:disabled{
-    opacity: 100%;
-}
+/*}*/
+
+/*.default:disabled{*/
+
+/*}*/
 .red {
 
     min-width: 150px;
@@ -25,5 +25,5 @@
     color: white;
 }
 .red:hover{
-    opacity: 70%;
+
 }
