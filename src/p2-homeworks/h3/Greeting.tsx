@@ -17,7 +17,7 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name,setName, nameDirty, setError, addUser, error, totalUsers, blurHandler, formValid} // деструктуризация пропсов
 ) => {
-    const inputClass = error? s.error : s.input
+    const inputClass = `${error? s.error : s.input} ${s.defaultInput}`
 
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {

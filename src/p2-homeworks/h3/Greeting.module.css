@@ -1,9 +1,14 @@
 .someClass {
 
 }
+.defaultInput{
+    height: 30px;
+}
 .wrapper{
     margin: 2rem 2rem;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .error {
@@ -31,6 +36,9 @@
     margin: 0 .5rem 0 .5rem;
     background-color: #4B81E8;
     color: white;
+    height: 30px;
+    width: 50px;
+
 }
 .button:focus{
     outline: #7194d9 solid 1px;
@@ -39,7 +47,7 @@
 
 .prompt{
     position: absolute;
-    top: 1.5rem
+    top: 2rem
 }
 
 

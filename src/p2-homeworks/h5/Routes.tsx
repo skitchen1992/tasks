@@ -4,6 +4,7 @@ import {Route} from "react-router-dom";
 import {Redirect} from "react-router-dom";
 import Error404 from "./pages/Error404";
 import PreJunior from "./pages/PreJunior";
+import Junior from "./pages/Junior";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -11,6 +12,8 @@ export const PATH = {
     JUNIOR_PLUS: '/junior+',
     // add paths
 }
+
+
 
 function Routes() {
     return (
@@ -23,7 +26,7 @@ function Routes() {
                 <Route path={'/'} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>
 
                 <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
-                {/*<Route path={PATH.JUNIOR} render={() => <Junior/>}/>*/}
+                <Route path={PATH.JUNIOR} render={() => <Junior/>}/>
                 {/*<Route path={PATH.JUNIOR_PLUS} render={() => <JuniorPlus/>}/>*/}
 
                 у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу
