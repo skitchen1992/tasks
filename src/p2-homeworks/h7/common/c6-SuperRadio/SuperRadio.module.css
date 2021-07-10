@@ -1,0 +1,48 @@
+
+.label{
+    padding: 20px;
+}
+.span{
+    margin-left: 10px;
+}
+.radio:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -27px;
+    left: -6px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+.radio:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -26px;
+    left: -5px;
+    position: relative;
+    background-color: #41AD49;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #41AD49;
+}
+
+.radio::before {
+    width: 21px;
+    height: 21px;
+    border-radius: 15px;
+    top: -5px;
+    left: -8px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #41AD49;
+}
+
