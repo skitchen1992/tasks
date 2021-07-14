@@ -1,0 +1,14 @@
+.lists{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.buttons{
+    display: flex;
+
+}
+.wrapper{
+    margin: 20px;
+    width: 550px;
+}
