@@ -19,8 +19,3 @@ export const homeWorkReducer = (state: UserType [], action: ActionType): UserTyp
             return state
     }
 }
-// if(action.payload==="up"){
-//     return [...state.sort((a,b)=>a.name.toUpperCase() <= b.name.toUpperCase() ? -1 : 1)]
-// }else{
-//     return [...state.sort((a,b)=>a.name.toUpperCase() >= b.name.toUpperCase() ? -1 : 1)]
-// }
